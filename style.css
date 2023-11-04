@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400&display=swap');
+
+*{
+    margin: 0;    
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --background-color:  linear-gradient(68deg, #2F2325 16.62%, #8E5D52 85.61%);
+    --title-font-color: #FFF2E7;
+    --hover-font-color:#cac1b9;
+    --button-background-color:#ECD6C4;
+    --hover-buton-color:#bbab9e;
+    --buton-font-color:#2F2325;
+    --title-style: "Righteous";
+    --geral-style: "Sarala";
+    --fonte-weight: 400;
+}
+
+
+
+body {
+    background: var(--background-color); 
+    color: var(--button-background-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+.header_img {
+    height: 72px;
+}
+
+.nav_bar {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav_bar__item {
+    font-family: var(--geral-style);
+    font-size: 1.125rem;
+    color: var(--font-color);
+}
+.nav_bar__item:hover {
+    color: var(--hover-font-color);
+}
+
+.content {
+    border-top: 0.4px solid var(--title-font-color);
+    margin-bottom: 4rem;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.top_section__title {
+    font-family: var(--title-style);
+    font-size: 4rem;
+    color: var(--title-font-color);
+}
+
+.top_section__subtitle {
+    margin: 2rem 0;
+    font-family: var(--geral-style) ;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.top_section__button {
+    background-color: var(--button-background-color);
+    font-size: 1.5rem;
+    border-radius: 1.25rem;
+    padding: 1rem;
+}
+
+.top_section__button:hover {
+    background-color: var(--hover-buton-color);
+}
+
+.below_section {
+    text-align: center;
+}
+
+.below_section__title {
+    display: inline-block;
+    color: var(--title-font-color);
+    font-family: var(--title-style);
+    padding: 4.5rem 0 3rem 0;
+    border-top: 0.025rem solid var(--title-font-color);
+}
+.below_section__paragraph {
+    font-family: var(--geral-style);
+    margin-bottom: 1.5rem;
+}
+
+
+.footer {
+    border-top: 0.4px solid var(--title-font-color);
+    padding: 2rem;
+    text-align: center;
+
+}
